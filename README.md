@@ -35,30 +35,7 @@ A simple backend API for daily updates with user and admin roles, built with Nod
 
 ## 📦 Project Structure
 
-backend-intern-task/
-├── config/
-│   └── db.js                # MongoDB connection setup
-├── controllers/
-│   ├── adminController.js   # Admin actions (view/edit/delete updates)
-│   ├── authController.js    # Login & signup logic
-│   └── updateController.js  # User update CRUD logic
-├── middlewares/
-│   ├── authMiddleware.js    # JWT authentication middleware
-│   └── roleMiddleware.js    # Role-based access control
-├── models/
-│   ├── Update.js            # Update schema
-│   └── User.js              # User schema
-├── routes/
-│   ├── adminRoutes.js       # Admin endpoints
-│   ├── authRoutes.js        # Login/signup endpoints
-│   └── updateRoutes.js      # User update endpoints
-├── seed/
-│   └── seedUsers.js         # Script to seed test users
-├── .env                     # Environment variables
-├── app.js                   # Main application entry point
-├── package.json             # Project metadata and scripts
-└── README.md                # Project documentation
-
+<pre> backend-intern-task/ ├── config/ │ └── db.js # MongoDB connection setup ├── controllers/ │ ├── adminController.js # Admin actions (view/edit/delete updates) │ ├── authController.js # Login & signup logic │ └── updateController.js # User update CRUD logic ├── middlewares/ │ ├── authMiddleware.js # JWT authentication middleware │ └── roleMiddleware.js # Role-based access control ├── models/ │ ├── Update.js # Update schema │ └── User.js # User schema ├── routes/ │ ├── adminRoutes.js # Admin endpoints │ ├── authRoutes.js # Login/signup endpoints │ └── updateRoutes.js # User update endpoints ├── seed/ │ └── seedUsers.js # Script to seed test users ├── .env # Environment variables (not committed) ├── .gitignore # Git ignore file ├── app.js # Main application entry point ├── package.json # Project metadata and scripts └── README.md # Project documentation </pre>
 
 ---
 
