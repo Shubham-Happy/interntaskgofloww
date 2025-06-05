@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "18b4f6e9-3894-4c0a-a410-95e44a562be6",
+		"name": "Intern task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40432267",
+		"_collection_link": "https://m44444-8430.postman.co/workspace/0931e1fa-5aa3-4d49-ad3a-f27e165b5561/collection/40432267-18b4f6e9-3894-4c0a-a410-95e44a562be6?action=share&source=collection_link&creator=40432267"
+	},
+	"item": [
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"user1\",\r\n  \"password\": \"password1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-6NrXLfzb8J9x/6+eFiEBUt/4pd0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:16:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU3YiIsImlhdCI6MTc0OTEwMDYxNywiZXhwIjoxNzQ5MTg3MDE3fQ.lpLKuoSMfMAAhFQmtdpqmU_Xo3U-y-y_jHJ5O78Ldo4\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Signup",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"newuser01\",\r\n  \"password\": \"newpassword\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-8oYdBWIxtArnfewT4RsPsEK+ML0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:19:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDEyOGQwMjBkNDgyYjBhODI3OTFmNSIsImlhdCI6MTc0OTEwMDc1MywiZXhwIjoxNzQ5MTg3MTUzfQ.IXu9XGz0vYcxt--DWvaFq0pEoP0laBsNEHUf2dR0F_A\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDEyOGQwMjBkNDgyYjBhODI3OTFmNSIsImlhdCI6MTc0OTEwMDc1MywiZXhwIjoxNzQ5MTg3MTUzfQ.IXu9XGz0vYcxt--DWvaFq0pEoP0laBsNEHUf2dR0F_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"My daily update\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a-BHSOhz+VJfN/6rAaXGTQDNewWNQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:23:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": \"684128d020d482b0a82791f5\",\n    \"content\": \"My daily update\",\n    \"_id\": \"684129b820d482b0a82791fa\",\n    \"date\": \"2025-06-05T05:23:04.063Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDEyOGQwMjBkNDgyYjBhODI3OTFmNSIsImlhdCI6MTc0OTEwMDc1MywiZXhwIjoxNzQ5MTg3MTUzfQ.IXu9XGz0vYcxt--DWvaFq0pEoP0laBsNEHUf2dR0F_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"My daily update 2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8c-qAHmufizJfzLBBYPWC34yC7SKC4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:31:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": \"684128d020d482b0a82791f5\",\n    \"content\": \"My daily update 2\",\n    \"_id\": \"68412bc520d482b0a8279203\",\n    \"date\": \"2025-06-05T05:31:49.159Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get My Updates",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDEyOGQwMjBkNDgyYjBhODI3OTFmNSIsImlhdCI6MTc0OTEwMDc1MywiZXhwIjoxNzQ5MTg3MTUzfQ.IXu9XGz0vYcxt--DWvaFq0pEoP0laBsNEHUf2dR0F_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8c-rsFYzlRolIMFv+nzpxqY5jFYaAo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:24:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"684129b820d482b0a82791fa\",\n        \"user\": \"684128d020d482b0a82791f5\",\n        \"content\": \"My daily update\",\n        \"date\": \"2025-06-05T05:23:04.063Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"adminpass\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-so/YcYuVW1+4P6c4iqd4jJmDFE0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:24:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin Get All Updates",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "356"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"164-K5dULMwOHFpo5QKpi5i6TNRXjxM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:25:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"684129b820d482b0a82791fa\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"My daily update\",\n        \"date\": \"2025-06-05T05:23:04.063Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68400375c156020c1db9a1fa\",\n        \"user\": {\n            \"_id\": \"684002f62feb13164e85457b\",\n            \"username\": \"user1\"\n        },\n        \"content\": \"Today I completed my backend task.\",\n        \"date\": \"2025-06-04T08:27:33.018Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Request before edit",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "528"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"210-tqUPlD7cpjvxO1gcthKiuxOGAG0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:31:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68412bc520d482b0a8279203\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"My daily update 2\",\n        \"date\": \"2025-06-05T05:31:49.159Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"684129b820d482b0a82791fa\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"My daily update\",\n        \"date\": \"2025-06-05T05:23:04.063Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68400375c156020c1db9a1fa\",\n        \"user\": {\n            \"_id\": \"684002f62feb13164e85457b\",\n            \"username\": \"user1\"\n        },\n        \"content\": \"Today I completed my backend task.\",\n        \"date\": \"2025-06-04T08:27:33.018Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Request after edit",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "527"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20f-mjx/PhqVLbmFhoLMMBNHPJct3YI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:36:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68412bc520d482b0a8279203\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"Edited by admin.\",\n        \"date\": \"2025-06-05T05:31:49.159Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"684129b820d482b0a82791fa\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"My daily update\",\n        \"date\": \"2025-06-05T05:23:04.063Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68400375c156020c1db9a1fa\",\n        \"user\": {\n            \"_id\": \"684002f62feb13164e85457b\",\n            \"username\": \"user1\"\n        },\n        \"content\": \"Today I completed my backend task.\",\n        \"date\": \"2025-06-04T08:27:33.018Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Request after delete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/updates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "356"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"164-K5dULMwOHFpo5QKpi5i6TNRXjxM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:38:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"684129b820d482b0a82791fa\",\n        \"user\": {\n            \"_id\": \"684128d020d482b0a82791f5\",\n            \"username\": \"newuser01\"\n        },\n        \"content\": \"My daily update\",\n        \"date\": \"2025-06-05T05:23:04.063Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68400375c156020c1db9a1fa\",\n        \"user\": {\n            \"_id\": \"684002f62feb13164e85457b\",\n            \"username\": \"user1\"\n        },\n        \"content\": \"Today I completed my backend task.\",\n        \"date\": \"2025-06-04T08:27:33.018Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Edit Update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDAwMmY2MmZlYjEzMTY0ZTg1NDU4NSIsImlhdCI6MTc0OTEwMTA5NywiZXhwIjoxNzQ5MTg3NDk3fQ.680GO26Wu7tgPA3df1m5LaxLGYSt6AeaOuSHxlFGqCY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"Edited by admin.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/updates/68412bc520d482b0a8279203",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"updates",
+								"68412bc520d482b0a8279203"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b-JgehaNlT0V/JnFa8Ac0EvGMNBHY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Jun 2025 05:36:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"68412bc520d482b0a8279203\",\n    \"user\": \"684128d020d482b0a82791f5\",\n    \"content\": \"Edited by admin.\",\n    \"date\": \"2025-06-05T05:31:49.159Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
